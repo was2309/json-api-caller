@@ -1,0 +1,32 @@
+[
+  {
+    "first_name": "Nikola",
+    "last_name": "Jokic",
+    "id": 2889,
+    "position": "C",
+    "team": {
+      "id": 35,
+      "full_name": "Denver Nuggets"
+    }
+  },
+  {
+    "first_name": "Bogdan",
+    "last_name": "Bogdanovic",
+    "id": 2890,
+    "position": "SG",
+    "team": {
+      "id": 36,
+      "full_name": "Atlanta Hawks"
+    }
+  },
+  {
+    "first_name": "Nemanja",
+    "last_name": "Bjelica",
+    "id": 2891,
+    "position": "PF",
+    "team": {
+      "id": 37,
+      "full_name": "Golden State Warriors"
+    }
+  }
+]
