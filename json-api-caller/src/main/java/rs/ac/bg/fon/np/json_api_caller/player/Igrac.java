@@ -1,13 +1,24 @@
 package rs.ac.bg.fon.np.json_api_caller.player;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Igrac {
 	
-	private String ime;
-	private int igracID;
-	private String pozicija;
-	private String tim;
-	private int timID;
 	
+	@SerializedName("first_name")
+	private String ime;
+	
+	@SerializedName("last_name")
+	private String prezime;
+	
+	@SerializedName("id")
+	private int igracID;
+	
+	@SerializedName("position")
+	private String pozicija;
+	
+	@SerializedName("team")
+	private Tim tim;
 	
 	
 	
@@ -16,6 +27,13 @@ public class Igrac {
 	}
 	public void setIme(String ime) {
 		this.ime = ime;
+	}
+	
+	public String getPrezime() {
+		return prezime;
+	}
+	public void setPrezime(String prezime) {
+		this.prezime = prezime;
 	}
 	public int getIgracID() {
 		return igracID;
@@ -29,25 +47,26 @@ public class Igrac {
 	public void setPozicija(String pozicija) {
 		this.pozicija = pozicija;
 	}
-	public String getTim() {
+	
+	public Tim getTim() {
 		return tim;
 	}
-	public void setTim(String tim) {
+	
+	public void setTim(Tim tim) {
 		this.tim = tim;
 	}
-	public int getTimID() {
-		return timID;
-	}
-	public void setTimID(int timID) {
-		this.timID = timID;
-	}
-	
 	
 	
 	@Override
 	public String toString() {
-		return "Igrac [ime=" + ime + ", igracID=" + igracID + ", pozicija=" + pozicija + ", tim=" + tim + ", timID="
-				+ timID + "]";
+		return "Igrac [ime=" + ime + ", prezime=" + prezime + ", igracID=" + igracID + ", pozicija=" + pozicija
+				+ ", tim=" + tim + "]";
 	}
+	
+	
+	
+	
+	
+	
 	
 }
